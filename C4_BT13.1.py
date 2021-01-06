@@ -1,13 +1,14 @@
-import os, glob
-print(dir(os)) # Các hàm có trong thư viện OS
-# Liệt kê các thư mục con trong ổ đĩa
-list1 = []
-list2 = []
+import os
+print("tất cả các tệp và thư mục trong ổ C:")
 path = 'C:\\Users\\MyPC\\Documents'
-for root, dirs, files in os.walk(path):
-    ten_tap_tin = glob.glob(path)
-    list1.append(ten_tap_tin)
-    ten_thu_muc = os.path.dirname(path)
-    list2.append(ten_thu_muc)
-print('Tên tập tin là: ', list1)
-print('Tên thư mục là: ', list2)
+print(os.listdir(path))
+print("")
+
+print("các thư mục:")
+list1 = next(os.walk(path))[1]
+print(list1)
+print("")
+
+print("các tệp:")
+list2 = next(os.walk(path))[2]
+print(list2)
