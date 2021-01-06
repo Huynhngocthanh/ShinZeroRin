@@ -1,25 +1,19 @@
-import os
-import sys
+import os,random
 import string
-import random
-os.chdir("C:\\")
-os.mkdir("Hie")
-size=0
-KB1000=1000*1024
-MB1=1024**2
-GB1=1024**3
-m=0
-size=random.randint(MB1,GB1+1)
-while size > KB1000:
-    n = random.randint(1, KB1000+1)
-    b=''
-    while sys.getsizeof(b) <= n:
-        a = random.choice(string.ascii_letters)
-        b = b + a
-    k = "C:\\hello\\hello" + str(m) + ".txt"
-    with open(k, 'w', encoding='utf-8') as f:
-        f.write(b)
-        f.close()
-    size = size - n
-    m = m + 1
-print("kết thúc chương trình")
+
+t = input('Nhập tên thư mục: ') #Em muốn tạo thư mục trực tiếp trên python
+path = 'C:\\Users\\MyPC\\Documents\\'
+os.chdir(path)
+os.mkdir(t)
+file_name = input("Nhập tên file dữ liệu: ") #Em muốn tạo tên file trực tiếp trên python
+n = int(input("Nhập tổng số lượng file với dung lượng 1MB-1024MB: ")) #vì 1MB=>1024KB nên số lượng file nằm từ khoảng 2->1048 files
+i = 1
+for i in range(n):
+    path1 = path + t
+    os.chdir(path1)
+    i = str(i)
+    f = open(file_name + i + '.txt','w+')
+    f.seek(1024*1000-1)
+    f.write(random.choice(string.ascii_lowercase))
+if f.seek(0):
+    os.remove(f) #Lọc file 0KB
