@@ -1,0 +1,120 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "techniques-bs.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Huynhngocthanh/shinzerorin/blob/main/Cuong_da_man\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nxCw7AZAZrUy"
+      },
+      "source": [
+        "1 Tải 1 url về"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "gUabxirVZibE"
+      },
+      "source": [
+        "from bs4 import BeautifulSoup\r\n",
+        "import requests\r\n",
+        "import os"
+      ],
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Cau3zZRanz_Z"
+      },
+      "source": [
+        "url = \"http://minecraft.net/en-us\"\r\n"
+      ],
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "osKHdc80ZwDV"
+      },
+      "source": [
+        "2. Lưu 1 html vào thư mục chỉ định"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-gvDk-nlZzLo"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BcKYLfcxZ-Hn"
+      },
+      "source": [
+        "3. Cách lấy 1 phần tử đầu tiên ra khỏi list và xóa nó khỏi list"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rjRGJjQiaB-Y"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "pfd7r87vaDSZ"
+      },
+      "source": [
+        "4. Cách lấy các url trong html"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "osOcronYaGuY"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
